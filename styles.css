@@ -1,0 +1,249 @@
+.header {
+    background-color: black;
+    padding: 10px 20px; 
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-right a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-right a:hover {
+    text-decoration: underline;
+}
+
+.header-right a:nth-child(n+2) {
+    color: white;
+}
+
+.slider-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 1775px;
+  margin: 0 auto; 
+  height: 600px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0; 
+  width: 100%; 
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+
+  animation: slider 15s infinite linear;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide:nth-child(1) {
+  background-color: gray;
+  animation-delay: 0;
+}
+.slide:nth-child(2) {
+  background-color: green;
+  animation-delay: -5s;
+}
+.slide:nth-child(3) {
+  background-color: black;
+  animation-delay: -10s;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+
+  26% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+    animation-timing-function: step-end;
+  }
+  93% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.custom-btn {
+  width: 347px;
+  height: 80px;
+  margin-right: 5px;
+  font-size: 26px;
+  font-weight: bold;
+  background-color: black; 
+  color: white;
+  text-decoration: none;
+  display: inline-block; 
+  text-align: center;
+  margin: 0 5px; 
+  padding-top: 5px; 
+  line-height: 65px;
+  cursor : pointer;
+}
+
+
+
+.text-center {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.container {
+  width: 100%;
+}
+
+.blue-box {
+  width: 1740px;
+  height: 200px;
+  border: 10px solid skyblue;
+  margin: 0 auto;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+select {
+  border: none;
+  width: 347px;
+  height: 80px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #afacac; /* 조금 어두운 회색 배경색 지정 */
+  font-size: 25px; /* 텍스트 크기를 16px로 지정 */
+  font-style: bold;
+  margin: 0 70px; /* 왼쪽과 오른쪽 간격을 10px로 지정합니다. */
+}
+
+select:focus{
+  outline:none;
+}
+
+
+.image-container{
+  display: flex;
+  justify-content: space-between;
+  margin-left : 65px;
+  margin-right : 65px;
+}
+
+.image-wrapper {
+  position: relative;
+  text-align: center; /* 이미지를 가운데 정렬 */
+}
+
+.caption {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  font-size: 25px;
+  text-shadow: 0.1px 0.5px 0 black;
+  text-align: center; /* 가운데 정렬 */
+}
+
+.image-wrapper img {
+  transition: transform 0.3s ease; /* 호버 시 전환 효과를 부드럽게 만듦 */
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.05); /* 호버 시 이미지를 약간 확대함 */
+}
+
+
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left, .footer-right {
+  flex: 1;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.messenger-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.messenger-btn:hover {
+  background-color: #0056b3;
+}
+
+.company-info {
+  text-align: right;
+}
+
+.company-info a {
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.custom-btn:hover {
+  background-color: #6c757d; /* 호버 시 배경색 변경 */
+  color: #fff; /* 호버 시 텍스트 색상 변경 */
+}

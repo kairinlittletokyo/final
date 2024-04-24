@@ -1,0 +1,17 @@
+.search-container {
+    position: absolute;
+    left: 10px;
+
+}
+
+.search-container input[type=text] {
+    width: 200%;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.search-container button {
+    width: 50px;
+    height: 55px;
+}
